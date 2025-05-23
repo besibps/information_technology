@@ -13,7 +13,7 @@ class WorkOrderPage extends StatefulWidget {
 class _WorkOrderPageState extends State<WorkOrderPage> {
   // ignore: unused_field
   int _selectedPage = 0;
-  Widget _currentPage = ListOfWorkOrder();
+  Widget _currentPage = InputOfWorkOrder();
 
   void _workOrderContent(int index, Widget content) {
     setState(() {

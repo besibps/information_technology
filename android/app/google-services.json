@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "661033945144",
+    "project_id": "information-technology-143ab",
+    "storage_bucket": "information-technology-143ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661033945144:android:3918a3315de5388bd93ecd",
+        "android_client_info": {
+          "package_name": "com.example.information_technology"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAeFa2xLq3s_J3ANiCZ08qtwi30Oyscgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
