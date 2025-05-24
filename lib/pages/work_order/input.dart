@@ -53,7 +53,6 @@ class _InputOfWorkOrderState extends State<InputOfWorkOrder> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _deptController.dispose();
     _requestorController.dispose();
     _deviceController.dispose();
@@ -171,7 +170,7 @@ class _InputOfWorkOrderState extends State<InputOfWorkOrder> {
                   const SizedBox(height: 16),
                   TextField(
                     controller: _picController,
-                    decoration: InputDecoration(labelText: 'pic'),
+                    decoration: InputDecoration(labelText: 'PIC'),
                   ),
                   const SizedBox(height: 16),
                   DropdownButtonFormField<String>(

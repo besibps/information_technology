@@ -30,7 +30,15 @@ class _WorkOrderPageState extends State<WorkOrderPage> {
           Container(
             padding: EdgeInsets.all(20),
             height: 100,
-            color: Colors.white,
+
+            decoration: BoxDecoration(
+              color: Colors.white,
+              image: DecorationImage(
+                image: AssetImage('assets/images/mount.png'),
+                fit: BoxFit.cover,
+                opacity: 0.5,
+              ),
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
