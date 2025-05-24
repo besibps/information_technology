@@ -13,7 +13,7 @@ class WorkOrderPage extends StatefulWidget {
 class _WorkOrderPageState extends State<WorkOrderPage> {
   // ignore: unused_field
   int _selectedPage = 0;
-  Widget _currentPage = InputOfWorkOrder();
+  Widget _currentPage = ListOfWorkOrder(workOrder: []);
 
   void _workOrderContent(int index, Widget content) {
     setState(() {
@@ -58,20 +58,14 @@ class _WorkOrderPageState extends State<WorkOrderPage> {
 
                   child: Icon(Icons.list, color: Colors.white),
                   onPressed: () {
-                    _workOrderContent(0, ListOfWorkOrder());
+                    _workOrderContent(0, ListOfWorkOrder(workOrder: []));
                   },
                 ),
               ],
             ),
           ),
           SizedBox(height: 20),
-          Expanded(
-            child: Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(20),
-              child: _currentPage,
-            ),
-          ),
+          Expanded(child: Container(color: Colors.white, child: _currentPage)),
         ],
       ),
     );

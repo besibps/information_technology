@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class WorkOrderModels {
+class WoModel {
   String? id;
   String dept;
   String requestor;
@@ -15,7 +15,7 @@ class WorkOrderModels {
   String remarks;
   Timestamp? createdAt;
 
-  WorkOrderModels({
+  WoModel({
     this.id,
     required this.dept,
     required this.requestor,
@@ -32,9 +32,9 @@ class WorkOrderModels {
   });
 
   //membuat wo dari DocumentSnapshot Firebase
-  factory WorkOrderModels.fromSnapshot(DocumentSnapshot snapshot) {
+  factory WoModel.fromSnapshot(DocumentSnapshot snapshot) {
     final data = snapshot.data() as Map<String, dynamic>;
-    return WorkOrderModels(
+    return WoModel(
       id: snapshot.id,
       dept: data['dept'] as String,
       requestor: data['requestor'] as String,
